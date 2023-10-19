@@ -90,5 +90,17 @@ public abstract class Store {
 			System.out.println("Orden Generada");
 			driver.findElement(By.xpath("//button[normalize-space()='OK']")).click();
 			System.out.println("Venta Realizada");
+			
+			System.out.println(" varible en java : "+ total_producto);
+
+			// Cierra solo la venta de navegador al final de la ejecución
+
+			//driver.close();
+
+			System.out.println("Cierra el navegador ");
+
+			// Cierra el navegador  y todas las ventanas asociadas al final del script.
+
+			driver.quit();
 	}
 }
