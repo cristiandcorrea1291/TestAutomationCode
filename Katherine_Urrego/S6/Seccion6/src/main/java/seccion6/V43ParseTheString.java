@@ -16,38 +16,43 @@ public class V43ParseTheString {
 		//Video 43 Parse the String with Java methods to get the password dynamically from the page
 		//enviar dinamicamente una contraseña por extraerla y parsing su forgot your password string
 		//*******************************************
+		System.setProperty("webdriver.chrome.driver", "/Users/rahulshetty/Documents/chromedriver"); 
 
-		// Configura el controlador de Chrome/navegador utilizando WebDriverManager.
-		WebDriverManager.chromedriver().setup();
-		//WebDriver es la interfaz, ChromeDriver es la clase y driver es la instancia
-		//"driver" es un objeto en la clase ChromeDriver
-		WebDriver driver = new ChromeDriver();
-		//Implicit WAIT ---se DEBE declarar despues del browserDriver //IMPLICIT WAIT: It waits for objects to show on the page..It's use for something TO SHOW
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		
+		WebDriver driver = new ChromeDriver(); 
+
+		// System.setProperty("webdriver.edge.driver", "/Users/rahulshetty/Documents/msedgedriver"); 
+
+		// WebDriver driver = new EdgeDriver(); 
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5)); 
 		String name = "KATHERINE MELISSA";
-		
 		//si declaro el metodo STATIC No es necesario crear un objeto de la clase, llamo al metodo directamente
-		//si el metodo NO ES STATIC, entonces creo un objeto para esta clase y luego llamo al metodo.
-		String password = getPassword(driver);//llamo al método de la clase
-		
-		
-		driver.get("https://rahulshettyacademy.com/locatorspractice/"); ///*utiliza el objeto driver para abrir un navegador web y navegar a la URL proporcionada, 
-		driver.findElement(By.id("inputUsername")).sendKeys(name);
-		driver.findElement(By.name("inputPassword")).sendKeys(password);
-		driver.findElement(By.className("signInBtn")).click();
-		Thread.sleep(5000);
+		//si el metodo NO ES STATIC, entonces creo un objeto para esta clase y luego llamo al metodo
+		String password = getPassword(driver); 
+
+		driver.get("https://rahulshettyacademy.com/locatorspractice/"); 
+
+		driver.findElement(By.id("inputUsername")).sendKeys(name); 
+
+		driver.findElement(By.name("inputPassword")).sendKeys(password); 
+
+		driver.findElement(By.className("submit signInBtn")).click(); 
+
+		Thread.sleep(2000); 
 		//Imprimir el mensaje que aparece despues de iniciar sesión, traermos el texto que hay en la etiqueta p del html
-		System.out.println(driver.findElement(By.tagName("p ")).getText());		
+		System.out.println(driver.findElement(By.tagName("p")).getText()); 
 		//Assert.assertEquals(one expected , with what you want to compare);
-		//si se parecen, el test will pass. If any of them mismatch the test will fail 
+		//si se parecen, el test will pass. If any of them mismatch the test will fail
 		//COMO HACER UNA ASSERTION EN EL MENSAJE DEL LOGIN
-		Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in.");
-		// de padre a hijo con sintaxis CSS
-		Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello "+name+",");
+		Assert.assertEquals(driver.findElement(By.tagName("p")).getText(), "You are successfully logged in."); 
+
+		Assert.assertEquals(driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText(),"Hello "+name+","); 
+
 		driver.findElement(By.xpath("//*[text()='Log Out']")).click(); 
+
 		driver.close(); 
 
+		
 	}
 	
 	//crear un método para pasar la contraseña
