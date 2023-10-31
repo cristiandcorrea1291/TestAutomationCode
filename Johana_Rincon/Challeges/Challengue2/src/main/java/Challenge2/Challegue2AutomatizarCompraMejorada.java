@@ -13,6 +13,20 @@ package Challenge2;
 	import java.util.NoSuchElementException;
 
 	public class Challegue2AutomatizarCompraMejorada {
+		/*
+		 * fecha 30 de octubre de 2023
+		 *Dada la siguiente pagina Web:
+		https://www.demoblaze.com/index.html
+
+		 Automatizar el siguiente flujo:
+		-Agregar dos elementos de la categoria "Phone"
+		-Agregar dos elementos de la categoria "Laptop"
+		-Agregar dos elementos de la categoria "Monitor"
+		-En la opción ¨Cart se debe eliminar un elemento de cada categoría
+		-Obtener el texto del total del carrito e imprimirlo
+		
+		Nota: se debe utilizar el concepto de waits y sincronizacion
+		 */
 		  
 
 		public static void main(String[] args) {
@@ -133,3 +147,4 @@ package Challenge2;
 
 				}
 			}
+		//Johana Rincon
