@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests" thread-count="10">
+	
+	<listeners> 
+		
+		<listener class-name="Seccion16.V144RunningTestsinParallelAndGeneratingReport"></listener>
+		
+	</listeners>
+
+
+	<parameter name="URL" value="www.google.com" />
+	
+	<test name="test141">
+		<parameter name="APIKey/usrname" value="1234567890" />
+		<classes>
+			<class name="Seccion16.V142DataProviderAnnotationParteDos" />
+		</classes>
+	</test> 
+	
+	<test name="TestlevelV">
+		<classes>
+			<parameter name="ENLACEDOS" value="www.youtube.com" />
+			<class name="Seccion16.V139AnnotationsHelpers" />
+		</classes>
+	</test> 
+	
+
+</suite> 
+
+
