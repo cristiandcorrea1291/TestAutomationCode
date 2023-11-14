@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-01T18:34:46 COT" name="Default suite" finished-at="2023-11-01T18:34:46 COT" duration-ms="114">
+    <groups>
+    </groups>
+    <test started-at="2023-11-01T18:34:46 COT" name="Default test" finished-at="2023-11-01T18:34:46 COT" duration-ms="114">
+      <class name="Sesion14.V116TestIng">
+        <test-method signature="regular()[pri:0, instance:Sesion14.V116TestIng@27f981c6]" started-at="2023-11-01T18:34:46 COT" name="regular" finished-at="2023-11-01T18:34:46 COT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regular -->
+        <test-method signature="streamFilter()[pri:0, instance:Sesion14.V116TestIng@27f981c6]" started-at="2023-11-01T18:34:46 COT" name="streamFilter" finished-at="2023-11-01T18:34:46 COT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- streamFilter -->
+      </class> <!-- Sesion14.V116TestIng -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
