@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	
+
+	<test name="Regresion por groups">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="Sesion16.day1" />
+			<class name="Sesion16.day2" />
+			<class name="Sesion16.day3" />
+			<class name="Sesion16.day4" />
+		</classes>
+
+	</test>
+	
+
+	<test name="TODAS LAS CLASES">
+		<classes>
+			<class name="Sesion16.day1" />
+			<class name="Sesion16.day2" />
+			<class name="Sesion16.day3" />
+			<class name="Sesion16.day4" />
+		</classes>
+
+
+	</test>
+
+</suite> 
+
+   
+       

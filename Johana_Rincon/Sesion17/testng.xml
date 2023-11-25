@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="todas las clases" parallel="tests" thread-count="6">
+	<test name="EjemploPadreHijo">
+		<classes>
+			<class name="Sesion17.HijoPs1" />
+			<class name="Sesion17.HijoPS2" />
+			<class name="Sesion17.HijoPS3" />
+			<class name="Sesion17.PadrePs" />
+
+
+		</classes>
+
+	</test>
+
+<test name="Ejemplo de metodo">
+	 <classes>
+		<class name="Sesion17.HijoPS3">
+        <methods>
+          <include name="multiplyTwo" />
+          <include name="multiplyThree" />
+        </methods>
+      </class>
+ </classes>
+	</test>
+</suite>
+
+
+
