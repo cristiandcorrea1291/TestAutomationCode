@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="testCreateLeavePeriod(failed)">
+    <classes>
+      <class name="challenge3.PaginaLeaveTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCreateLeavePeriod"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- challenge3.PaginaLeaveTest -->
+    </classes>
+  </test> <!-- testCreateLeavePeriod(failed) -->
+</suite> <!-- Failed suite [Suite] -->
