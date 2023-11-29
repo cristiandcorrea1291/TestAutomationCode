@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="2">
+    <test name="TestCrearUsuario">
+        <classes>
+            <class name="challenge3.PaginaAdminTest">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="testCrearUsuario"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="TestBuscarUsuario">
+        <classes>
+            <class name="challenge3.PaginaAdminTest">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="testBuscarUsuario"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="TestEditarUsuario">
+        <classes>
+            <class name="challenge3.PaginaAdminTest">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="testEditarUsuario"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="testEliminarUsuario">
+        <classes>
+            <class name="challenge3.PaginaAdminTest">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="testEliminarUsuario"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="2">
+    <test name="testCreateLeavePeriod">
+        <classes>
+            <class name="challenge3.PaginaLeaveTest">
+                <methods>
+					<include name="setUp" />
+					<include name="testCreateLeavePeriod" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="testAddEntitlementIndivual">
+        <classes>
+            <class name="challenge3.PaginaLeaveTest">
+                <methods>
+					<include name="setUp" />
+					<include name="testAddEntitlementIndivual" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+        <test name="testAddEntitlementMultiple">
+        <classes>
+			<class name="challenge3.PaginaLeaveTest">
+				<methods>
+					<include name="setUp" />
+					<include name="testAddEntitlementMultiple" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="testbuscarVac">
+		<classes>
+			<class name="challenge3.PaginaLeaveTest">
+				<methods>
+					<include name="setUp" />
+					<include name="testbuscarVac" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="testAprobarVac">
+		<classes>
+			<class name="challenge3.PaginaLeaveTest">
+				<methods>
+					<include name="setUp" />
+					<include name="testAprobarVac" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	    <test name="testRejectVac">
+        <classes>
+            <class name="challenge3.PaginaLeaveTest">
+                <methods>
+					<include name="setUp" />
+					<include name="testRejectVac" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+    
+
+
+</suite>
+

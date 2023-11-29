@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="methods" thread-count="2">
+    <test name="testBuscarHorasTrabajo">
+        <classes>
+            <class name="challenge3.PaginaTimeTest">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="testBuscarHorasTrabajo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="testIngresarHorasTrabajadas">
+        <classes>
+            <class name="challenge3.PaginaTimeTest">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="testIngresarHorasTrabajadas"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="testEliminarRegistroHorasProyecto">
+        <classes>
+            <class name="challenge3.PaginaTimeTest">
+                <methods>
+                    <include name="setUp"/>
+                    <include name="testEliminarRegistroHorasProyecto"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
+
